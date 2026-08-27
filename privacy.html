@@ -4,62 +4,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Storyhack 隐私政策</title>
-<style>
-  :root { color-scheme: light dark; }
-  body {
-    font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif;
-    max-width: 680px; margin: 0 auto; padding: 48px 24px 80px;
-    line-height: 1.75; background: #f7f2e9; color: #1b150f;
-  }
-  @media (prefers-color-scheme: dark) {
-    body { background: #12100e; color: #efe7d8; }
-    a { color: #d8b173; }
-  }
-  a { color: #9b7441; }
-  h1 { font-size: 26px; }
-  h2 { font-size: 18px; margin-top: 36px; }
-  .muted { opacity: .66; }
-</style>
+<meta name="description" content="Storyhack（世界书）隐私政策：本地优先的小说阅读与互动叙事工具如何处理你的数据。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<h1>Storyhack 隐私政策</h1>
-<p class="muted">生效日期：2026 年 8 月 26 日</p>
 
-<p>Storyhack（世界书）是一款本地优先的小说阅读与互动叙事工具。本政策说明 App 如何处理小说、世界书、模型配置、购买状态和诊断信息。</p>
+<header class="site-head">
+  <a class="wordmark" href="./">Storyhack<sup>®</sup></a>
+  <nav class="site-nav">
+    <a href="index.html#support">支持</a>
+    <a href="index.html#faq">常见问题</a>
+    <a href="privacy.html">隐私政策</a>
+  </nav>
+</header>
 
-<h2>1. 本地保存的数据</h2>
-<p>您导入的小说、世界书、角色资料、阅读进度、书签、游玩记录、存档和分支默认保存在您的设备上。App 不运营用于上传或同步这些内容的自有云端账户系统。</p>
-<p>模型服务配置保存在本机；API Key 存入 Apple Keychain，不写入小说、世界书、普通配置文件或应用日志。</p>
-<p>Mac 版提供可手动开启的"远程游玩"：开启后，App 会在您的局域网或 Tailscale 私有网络上监听一个 HTTP 端口，持有访问令牌的同一网络设备可读取并游玩本机世界书。该服务默认关闭，传输不经过公有云，也不会把内容发送给 Apple 或开发者。</p>
+<main>
+  <article class="doc">
+    <h1>隐私政策</h1>
+    <p class="doc-meta">生效日期：2026 年 8 月 26 日</p>
 
-<h2>2. 何时会向第三方模型服务发送内容</h2>
-<p>App 不内置模型账号。只有在您配置第三方模型服务并主动执行相关操作时，App 才会把完成该操作所需的文本直接发送给您选择的服务商，例如：</p>
-<ul>
-  <li>在世界书中发送游玩行动；</li>
-  <li>对小说执行"生成世界书"；</li>
-  <li>主动提取原著节拍线；</li>
-  <li>使用需要在线模型的创作功能。</li>
-</ul>
-<p>发送范围取决于具体功能，可能包含您输入的文字、相关世界书设定、必要的近期会话，以及小说的相关片段或工坊分析批次。该传输受您所选服务商的条款和隐私政策约束。请勿配置您不信任的服务商，也不要导入或发送您无权处理的内容。</p>
+    <p>Storyhack（世界书）是一款本地优先的小说阅读与互动叙事工具。本政策说明 App 如何处理小说、世界书、模型配置、购买状态和诊断信息。</p>
 
-<h2>3. AI 生成内容与内容安全</h2>
-<p>模型回复可能不准确，也可能产生不适宜内容。App 的叙事和工坊提示会要求模型把露骨成人、伤害或其他不宜内容转化为非露骨、健康的表达并继续引导，不以此承诺所有第三方模型输出都能被完全过滤。用户应审阅生成结果，不应把其视为专业、法律、医疗或财务建议。</p>
+    <h2>1. 本地保存的数据</h2>
+    <p>您导入的小说、世界书、角色资料、阅读进度、书签、游玩记录、存档和分支默认保存在您的设备上。App 不运营用于上传或同步这些内容的自有云端账户系统。</p>
+    <p>模型服务配置保存在本机；API Key 存入 Apple Keychain，不写入小说、世界书、普通配置文件或应用日志。</p>
+    <p>Mac 版提供可手动开启的"远程游玩"：开启后，App 会在您的局域网或 Tailscale 私有网络上监听一个 HTTP 端口，持有访问令牌的同一网络设备可读取并游玩本机世界书。该服务默认关闭，传输不经过公有云，也不会把内容发送给 Apple 或开发者。</p>
 
-<h2>4. 购买</h2>
-<p>Pro 为 Apple App Store 提供的非消耗型 App 内购买。购买、退款、家庭共享和交易凭证由 Apple 处理。App 读取经设备验证的当前购买权益，并在本机缓存解锁状态以改善启动体验；App 不接收您的完整支付卡资料。</p>
+    <h2>2. 何时会向第三方模型服务发送内容</h2>
+    <p>App 不内置模型账号。只有在您配置第三方模型服务并主动执行相关操作时，App 才会把完成该操作所需的文本直接发送给您选择的服务商，例如：</p>
+    <ul>
+      <li>在世界书中发送游玩行动；</li>
+      <li>对小说执行"生成世界书"；</li>
+      <li>主动提取原著节拍线；</li>
+      <li>使用需要在线模型的创作功能。</li>
+    </ul>
+    <p>发送范围取决于具体功能，可能包含您输入的文字、相关世界书设定、必要的近期会话，以及小说的相关片段或工坊分析批次。该传输受您所选服务商的条款和隐私政策约束。请勿配置您不信任的服务商，也不要导入或发送您无权处理的内容。</p>
 
-<h2>5. 跟踪、分析与广告</h2>
-<p>当前版本不包含广告 SDK，不进行跨 App 或跨网站跟踪，也不由开发者收集用于广告画像的个人数据。若未来加入会改变此结论的服务，本政策和 App 的隐私披露会在启用前更新。</p>
+    <h2>3. AI 生成内容与内容安全</h2>
+    <p>模型回复可能不准确，也可能产生不适宜内容。App 的叙事和工坊提示会要求模型把露骨成人、伤害或其他不宜内容转化为非露骨、健康的表达并继续引导，不以此承诺所有第三方模型输出都能被完全过滤。用户应审阅生成结果，不应把其视为专业、法律、医疗或财务建议。</p>
 
-<h2>6. 文件导入、导出与删除</h2>
-<p>App 只在您通过系统文件选择器、系统"打开方式"或明确的导入/导出操作授权后访问对应文件。删除本机小说或世界书会按 App 界面说明处理；部分世界书删除操作会先移动到本机备份目录，便于恢复。卸载 App 或清除设备数据可能移除本地内容，请在操作前导出重要资料。</p>
+    <h2>4. 购买</h2>
+    <p>Pro 为 Apple App Store 提供的非消耗型 App 内购买。购买、退款、家庭共享和交易凭证由 Apple 处理。App 读取经设备验证的当前购买权益，并在本机缓存解锁状态以改善启动体验；App 不接收您的完整支付卡资料。</p>
 
-<h2>7. 儿童隐私</h2>
-<p>本 App 不面向儿童建立账户，也不主动收集儿童个人信息。年龄分级以 App Store 产品页的当前标注为准。监护人应结合所配置第三方模型的能力与政策决定是否允许未成年人使用。</p>
+    <h2>5. 跟踪、分析与广告</h2>
+    <p>当前版本不包含广告 SDK，不进行跨 App 或跨网站跟踪，也不由开发者收集用于广告画像的个人数据。若未来加入会改变此结论的服务，本政策和 App 的隐私披露会在启用前更新。</p>
 
-<h2>8. 政策更新与联系</h2>
-<p>如果数据处理方式发生实质变化，本政策会更新生效日期，并在适用时通过 App 或产品页面提示。若您对隐私或数据删除有疑问，请通过 App Store 产品页面列出的"App 支持"渠道联系开发者。</p>
+    <h2>6. 文件导入、导出与删除</h2>
+    <p>App 只在您通过系统文件选择器、系统"打开方式"或明确的导入/导出操作授权后访问对应文件。删除本机小说或世界书会按 App 界面说明处理；部分世界书删除操作会先移动到本机备份目录，便于恢复。卸载 App 或清除设备数据可能移除本地内容，请在操作前导出重要资料。</p>
 
-<p class="muted">© 2026 Storyhack · <a href="index.html">支持与帮助</a></p>
+    <h2>7. 儿童隐私</h2>
+    <p>本 App 不面向儿童建立账户，也不主动收集儿童个人信息。年龄分级以 App Store 产品页的当前标注为准。监护人应结合所配置第三方模型的能力与政策决定是否允许未成年人使用。</p>
+
+    <h2>8. 政策更新与联系</h2>
+    <p>如果数据处理方式发生实质变化，本政策会更新生效日期，并在适用时通过 App 或产品页面提示。若您对隐私或数据删除有疑问，请通过 App Store 产品页面列出的"App 支持"渠道联系开发者。</p>
+  </article>
+</main>
+
+<footer class="site-foot">
+  <span>© 2026 Storyhack</span>
+  <a href="index.html">支持与帮助</a>
+  <a href="https://doubixilin.github.io/" target="_blank" rel="noopener">A project by doubixilin ↗</a>
+</footer>
+
 </body>
 </html>
